@@ -1,0 +1,305 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+/* Prima parte */
+.prima {
+  background-image: url(./media/bg-1.jpg);
+  background-size: auto;
+  background-position: left;
+}
+
+.logo {
+  height: 65px;
+  width: 150px;
+  margin-bottom: 50px;
+}
+
+.arcade {
+  max-width: 75%;
+  height: auto;
+}
+
+.btn {
+  color: yellow;
+  border-radius: 100px;
+  padding: 14px 20px;
+  background-color: transparent;
+}
+
+.fa-solid {
+  color: yellow;
+}
+
+.arcade1 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.first-part {
+  max-width: 950px;
+}
+
+/* Seconda parte */
+.sec-part {
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  max-width: 950px;
+}
+
+.mil {
+  text-align:start;
+}
+
+
+/* Terza parte */
+.tab {
+  display: grid;
+  justify-content: center;
+  padding: 15px;
+  width: 100%;
+}
+
+.register {
+  display: grid;
+  flex-direction: column;
+  padding-top: 3%;
+  padding-left: 6%;
+  padding-right: 6%;
+  max-width: 100%;
+  text-align:start;
+  border-radius: 3%;
+  background-color: #0b0037;
+}
+
+.register h1 {
+  color: white;
+  font-size: 2em;
+  text-align: start;
+  width: 65%;
+}
+
+.symbol {
+  display: flex;
+  align-items: center;
+  padding-top: 7%;
+}
+
+.calendar-icon {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ece639;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-symbol {
+  display: flex;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.calendar-line {
+  width: 100%;
+  height: 6px;
+  background-color: white; /* Linea superiore del calendario */
+  border-radius: 3px;
+  margin-bottom: 6px;
+}
+
+.calendar-box {
+  width: 100%;
+  height: 70%;
+  border: 2px solid white; /* Bordo del rettangolo principale */
+  border-radius: 4px;
+  background-color: transparent; /* Trasparente al centro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-box::before {
+  content: "";
+  width: 60%;
+  height: 40%;
+  background-color: white; /* Simula le righe all'interno */
+  border-radius: 1px;
+}
+
+form {
+  padding-bottom: 10%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.register input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 5px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #d53ec4;
+}
+
+.register .btn {
+  background-color: yellow;
+  width: 100%;
+  color: black;
+  border-radius: 50px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* Quarta parte */
+.container-fluid {
+  display: flex;
+  background-color: #0b0037;
+  justify-content: center;
+}
+
+.quartaparte{
+  max-width: 950px;
+}
+
+.img {
+  max-width: 950px;
+  margin-left: 20%;
+}
+
+.par h2 {
+  color: yellow;
+}
+
+.par {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Quinta parte */
+.quinta {
+  background-image: url(./media/bg-3.jpg);
+  background-size: auto;
+  background-position: center;
+}
+
+.quintaparte {
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  max-width: 950px;
+}
+
+.speaker {
+  max-width: 100%;
+  text-align: start;
+  margin-left: 1px;
+}
+
+.speaker h2{
+  color: yellow;
+}
+
+.marco {
+  display: flex;
+  width: 300px;
+  height: 550px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Media query */
+@media (max-width: 992px) {
+  .p-col {
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .logo {
+    height: 40px;
+    width: 140px;
+  }
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .p-col {
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .logo {
+    height: 45px;
+    width: 140px;
+    margin-bottom: 0px;
+  }
+  
+  .arcade {
+    max-width: 100%;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .arcade1{
+    height: 400px;
+    width: 250px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  
+  .par {
+    max-width: 100%;
+    margin-right: 0;
+    text-align: center;
+  }
+  .p-col {
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .logo {
+    height: 50px;
+    width: 140px;
+    margin-bottom: 0px;
+  }
+  
+  .p{
+    margin-bottom: 0px;
+  }
+  
+  .arcade{
+    height: 40vh;
+  }
+}
